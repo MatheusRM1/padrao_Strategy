@@ -1,4 +1,4 @@
-package padroescomportamentais.strategy;
+package org.strategy;
 
 public interface Imposto {
 

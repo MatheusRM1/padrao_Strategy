@@ -22,4 +22,14 @@ public class Produto {
         CalculadoraImposto calculadora = new CalculadoraImposto(valor);
         this.valor = calculadora.calcular(new ImpostoIPI());
     }
+
+    public void calcularIPVA(float valor) {
+        CalculadoraImposto calculadora = new CalculadoraImposto(valor);
+        this.valor = calculadora.calcular(new ImpostoIPVA());
+    }
+
+    public void calcularIOF(float valor) {
+        CalculadoraImposto calculadora = new CalculadoraImposto(valor);
+        this.valor = calculadora.calcular(new ImpostoIOF());
+    }
 }
